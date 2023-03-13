@@ -1,7 +1,14 @@
 package br.com.dio.desafio.dominio;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 import java.time.LocalDate;
 
+
+@Setter
 public class Mentoria extends Conteudo{
 
     private LocalDate data;
@@ -16,10 +23,6 @@ public class Mentoria extends Conteudo{
 
     public LocalDate getData() {
         return data;
-    }
-
-    public void setData(LocalDate data) {
-        this.data = data;
     }
 
     @Override
